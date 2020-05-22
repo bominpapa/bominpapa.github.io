@@ -1,0 +1,15 @@
+<a id="create-kakao-login-btn"></a>
+
+<script type="text/javascript">
+  // input your appkey
+  Kakao.init('c089c8172def97eb00c07217cae17495')
+  Kakao.Auth.createLoginButton({
+    container: '#create-kakao-login-btn',
+    success: function(authObj) {
+      alert(JSON.stringify(authObj))
+    },
+    fail: function(err) {
+      alert(JSON.stringify(err))
+    },
+  })
+</script>
